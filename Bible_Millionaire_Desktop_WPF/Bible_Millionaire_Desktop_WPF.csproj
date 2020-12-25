@@ -8,6 +8,9 @@
     <Company>Jamieson Applications</Company>
     <Product>Who Wants to be a Millionaire: Bible Edition</Product>
     <Copyright>(C) Neal Jamieson 2020</Copyright>
+    <PackageProjectUrl>https://github.com/Jamiesonnc/Bible_Millionaire_Desktop_WPF</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Jamiesonnc/Bible_Millionaire_Desktop_WPF</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
