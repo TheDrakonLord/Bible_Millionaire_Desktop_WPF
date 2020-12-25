@@ -1,0 +1,1346 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bible_Millionaire_Desktop_WPF</name>
+    </assembly>
+    <members>
+        <member name="T:Bible_Millionaire_Desktop_WPF.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.presentForm">
+            <summary>
+            Controls the Introductory form
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.mainMenuForm">
+            <summary>
+            Controls the main menu form
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.settingsForm">
+            <summary>
+            controls the settings form
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.quizForm">
+            <summary>
+            controls the quiz form
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.lifelineForm">
+            <summary>
+            controls the lifeline form
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.ladderForm">
+            <summary>
+            controls the ladder form. Not currently in use
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.fastestForm">
+            <summary>
+            controls the fastest finger form. not currently in use.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.formProvider.endForm">
+            <summary>
+            controls the ending screen form
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmEnd">
+            <summary>
+            Interaction logic for frmEnd.xaml
+            </summary>
+            <summary>
+            frmEnd
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmEnd.#ctor">
+            <summary>
+            primary constructor for the ending screen form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmEnd.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmFastest">
+            <summary>
+            Interaction logic for frmFastest.xaml
+            </summary>
+            <summary>
+            frmFastest
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmFastest.#ctor">
+            <summary>
+            primary constructor for the fastest finger form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmFastest.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmLadder">
+            <summary>
+            Interaction logic for frmLadder.xaml
+            </summary>
+            <summary>
+            frmLadder
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmLadder.#ctor">
+            <summary>
+            primary constructor for the ladder form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmLadder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmLifeline">
+            <summary>
+            Interaction logic for frmLifeline.xaml
+            </summary>
+            <summary>
+            frmLifeline
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmLifeline.#ctor">
+            <summary>
+            primary constructor for the lifeline form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmLifeline.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmMainMenu">
+            <summary>
+            Interaction logic for frmMainMenu.xaml
+            </summary>
+            <summary>
+            frmMainMenu
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmMainMenu.#ctor">
+            <summary>
+            primary constructor for the main menu form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmMainMenu.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmPresent">
+            <summary>
+            Interaction logic for frmPresent.xaml
+            </summary>
+            <summary>
+            frmPresent
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmPresent.#ctor">
+            <summary>
+            primary constructor for the present form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmPresent.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmQuiz">
+            <summary>
+            Interaction logic for frmQuiz.xaml
+            </summary>
+            <summary>
+            frmQuiz
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.frmQuiz.gameShow">
+            <summary>
+            declaration for the class that controls various core data aspects of the system
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.frmQuiz.backgroundAudio">
+            <summary>
+            primary background audio player for the system
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmQuiz.#ctor">
+            <summary>
+            primary constructor for the quiz form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmQuiz.selectAudio">
+            <summary>
+            determines the current point in the application lifecycle and loads the appropriate audio file into the player
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmQuiz.startPhase">
+            <summary>
+            intializes the application lifecycle
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmQuiz.setQuestion">
+            <summary>
+            loads the current question and prepares it for display
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmQuiz.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.frmSettings">
+            <summary>
+            Interaction logic for frmSettings.xaml
+            </summary>
+            <summary>
+            frmSettings
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmSettings.#ctor">
+            <summary>
+            primary constructor for the settings form
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.frmSettings.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.millionaireQuiz">
+            <summary>
+            primary data hanlder for the system
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintMinQuestion">
+            <summary>
+            the minimum value for referencing quesion IDs
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintMaxQuestion">
+            <summary>
+            the maximum value for referencing question IDs
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintMinQuiz">
+            <summary>
+            the minimum value for referencing quiz IDs
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintMaxQuiz">
+            <summary>
+            the maximum value for referencing quiz IDs
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerStartRound1">
+            <summary>
+            the duration of the start phase in round 1
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerStartRound2">
+            <summary>
+            the duration of the start phase in round 2
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerStartRound3">
+            <summary>
+            the duration of the start phase in round 3
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerLifelineAudience">
+            <summary>
+            the duration of the ask the audience lifeline timer
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerLifelinePhoneAFriend">
+            <summary>
+            the duration of the phone a friend lifeline timer
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerLifelineBook">
+            <summary>
+            the duration of the look in the book lifeline timer
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerLifelineHaveAHint">
+            <summary>
+            the duration of the have a hint lifeline timer
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.cintTimerLifeline5050">
+            <summary>
+            the duration of the 5050 lifeline timer
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelines">
+            <summary>
+            enum containing the various types of lifeline
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelines.lookInTheBook">
+            <summary>
+            the look in the book lifeline
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelines.haveAHint">
+            <summary>
+            the have a hint lifeline
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelines.doubleYourChances">
+            <summary>
+            the 5050 lifeline
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelines.askTheAudience">
+            <summary>
+            the ask the audience lifeline
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelines.phoneAFriend">
+            <summary>
+            the phone a friend lifeine
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates">
+            <summary>
+            enum containing the various states the quiz can be in
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates.start">
+            <summary>
+            when the quiz first begins (before the first question)
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates.intro">
+            <summary>
+            the period just before a question is displayed
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates.mainPhase">
+            <summary>
+            the period when a question is displayed and the timer is counting down
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates.lifeline">
+            <summary>
+            the period when a lifeline has been requested by the player
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates.selected">
+            <summary>
+            the period when the user has selected their answer choice
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates.result">
+            <summary>
+            the period when the correct answer is displayed
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.quizStates.transition">
+            <summary>
+            the period after the result is displayed but before the next question is loaded
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.millionaireQuiz.startStates">
+            <summary>
+            enum representing the various sub-states in the start phase
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.startStates.rules">
+            <summary>
+            the period when the tutorial is running
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.startStates.lifelines">
+            <summary>
+            the period when the lifelines pop up on screen
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.startStates.hotseat">
+            <summary>
+            the period when the hotseat audio cue plays
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.millionaireQuiz.resultStates">
+            <summary>
+            enum representing the various sub-states of the result phase
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.resultStates.win">
+            <summary>
+            sub-state for when the user has selected a correct answer
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.resultStates.lose">
+            <summary>
+            sub-state for when the user has selected an incorrect answer
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.resultStates.outOfTime">
+            <summary>
+            sub-state for when the user has run out of time
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.resultStates.walkAway">
+            <summary>
+            sub-state for when the user has chosen the walk-away option
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.millionaireQuiz.answerOptions">
+            <summary>
+            enum representing the various answer choices
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.answerOptions.A">
+            <summary>
+            answer choice a
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.answerOptions.B">
+            <summary>
+            answer choice b
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.answerOptions.C">
+            <summary>
+            answer choice c
+            </summary>
+        </member>
+        <member name="F:Bible_Millionaire_Desktop_WPF.millionaireQuiz.answerOptions.D">
+            <summary>
+            answer choice d
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.qValues">
+            <summary>
+            string representing the score of the current question (e.g. $100)
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.winnings">
+            <summary>
+            returns a string representing the players final score
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.finalAudioDuration">
+            <summary>
+            integer representing the duration of the final answer sound effect
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.LifelineAAvailable">
+            <summary>
+            represents if the first lifeline option is avalable (has not been used yet)
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.LifelineBAvailable">
+            <summary>
+            represents if the Second lifeline option is avalable (has not been used yet)
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.LifelineCAvailable">
+            <summary>
+            represents if the third lifeline option is avalable (has not been used yet)
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.currentQ">
+            <summary>
+            returns an integer representing the current question number (0-11)
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.currentState">
+            <summary>
+            gets or sets the current state that the quiz is in
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.startState">
+            <summary>
+            gets or sets the curent start sub-state that the quiz is in
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.result">
+            <summary>
+            gets or sets the result of the current question
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.selectedLifeline">
+            <summary>
+            gets or sets the lifeline the player selected 
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.question">
+            <summary>
+            returns a string representing the question prompt
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.AnswerA">
+            <summary>
+            returns a string representing answer option A
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.AnswerB">
+            <summary>
+            returns a string representing answer option B
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.AnswerC">
+            <summary>
+            returns a string representing answer option C
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.AnswerD">
+            <summary>
+            returns a string representing answer option D
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.LifelineBook">
+            <summary>
+            returns a string representing the prompt for the look in the book lifeline
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.LifelineHint">
+            <summary>
+            returns a string representing the prompt for the have a hint lifeline
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelineDouble1">
+            <summary>
+            returns the first of the two incorrect answer choices elminated by the 5050 lifeline
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.lifelineDouble2">
+            <summary>
+            returns the second of the two incorrect answer choices elminated by the 5050 lifeline
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.correctAnswer">
+            <summary>
+            returns the correct answer
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.millionaireQuiz.selectedAnswer">
+            <summary>
+            gets or sets the answer selected by the player
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.millionaireQuiz.#ctor">
+            <summary>
+            primary constructor for the primary data handler
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.millionaireQuiz.selectQuestions">
+            <summary>
+            randomly selects the questions to be used during the current playthrough and stores them
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.millionaireQuiz.loadQuestion(System.Int32)">
+            <summary>
+            retrieves the specified question from the database and stores it as the next question to be displayed
+            </summary>
+            <param name="q">the question number to be loaded</param>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.millionaireQuiz.currentTimer">
+            <summary>
+            returns and integer representing the duration for the main timer
+            </summary>
+            <returns>integer duration of the timer</returns>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.millionaireQuiz.currentLifelineTimer">
+            <summary>
+            returns an integer representing the timer duration for the currently selected lifeline
+            </summary>
+            <returns>integer duration of the lifeline timer</returns>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.millionaireQuiz.checkAnswer">
+            <summary>
+            determines if the selected answer was correct and sets the result state to the appropriate value
+            </summary>
+        </member>
+        <member name="M:Bible_Millionaire_Desktop_WPF.millionaireQuiz.advance">
+            <summary>
+            moves the question stored as next to the current slot
+            </summary>
+        </member>
+        <member name="T:Bible_Millionaire_Desktop_WPF.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.app_icon_your_company">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ask_the_audience">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.bible_millionaire_logo">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_a">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_a_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_a_selected">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_b">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_b_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_b_selected">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_back">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_c">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_c_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_c_selected">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_controls">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_d">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_d_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_d_selected">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_option">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_play">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.btn_settings">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.closing_theme">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.commercial_in">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.commercial_out">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.correct_order">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.correct_order_2">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.end_screen">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.explain_the_rules">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.fastest_finger_interlude">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.fastest_finger_question">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.final_answer_1mil">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.final_answer_32k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.final_answer_4to8">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.final_answer_5to9">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.final_answer_6to10">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.final_answer_7to11">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.four_in_correct_order">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.goodbye">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.goodbye_extended">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.img_background">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.img_controls">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.img_description">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.img_question">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.in_the_hot_seat">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.intro1">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.intro1_sting">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.intro2">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_0">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_1">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_10">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_11">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_12">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_2">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_3">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_4">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_5">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_6">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_7">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_8">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.ladder_9">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lets_play_1_5_9">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lets_play_1mil">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lets_play_32k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lets_play_5to8">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lets_play_6to10">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lets_play_7to11">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_5050">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_5050_used">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_ask_audience_used">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_askaaudience">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_audience_screen">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_blank">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_blank_used">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_book_screen">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_have_a_hint">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_have_a_hint_used">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_hint_screen">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_look_in_the_book">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_look_in_the_book_used">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_phone">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_phone_screen">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_phone_used">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline_walk_away">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifeline5050">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lifelines">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lose_1mil">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lose_1to4">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lose_32k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lose_5to8">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lose_5to9">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lose_6to10">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.lose_7to11">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.main_theme">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.main_theme_radio_edit">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.out_of_time">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.phone_a_friend">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.present">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_125k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_16k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_1mil">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_250k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_2k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_32k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_4k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_500k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_64k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.question_8k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.questions_1to4">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_base">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_data">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+            &lt;quizData&gt;
+              &lt;quiz id=&quot;1&quot;&gt;
+                &lt;question id=&quot;1&quot;&gt;
+                  &lt;text&gt;What was the name of the first man?&lt;/text&gt;
+                  &lt;answer id=&quot;A&quot;&gt;Fred&lt;/answer&gt;
+                  &lt;answer id=&quot;B&quot;&gt;Adam&lt;/answer&gt;
+                  &lt;answer id=&quot;C&quot;&gt;Noah&lt;/answer&gt;
+                  &lt;answer id=&quot;D&quot;&gt;John the baptist&lt;/answer&gt;
+                  &lt;lifeline type=&quot;LookInTheBook&quot;&gt;Genesis 2:20&lt;/lifeline&gt;
+                  &lt;lifeline type=&quot;HaveAHint&quot;&gt;He&apos;s first alphabetically too&lt;/lifeline&gt;
+                  &lt;lifeline type=&quot;DoubleYourChances&quot;&gt;
+                    &lt;incorrectAnswer id= [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_A_base">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_A_Bcorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_A_Ccorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_A_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_A_Dcorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_B_Acorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_B_base">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_B_Ccorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_B_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_B_Dcorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_C_Acorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_C_base">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_C_Bcorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_C_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_C_Dcorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_D_Acorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_D_base">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_D_Bcorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_D_Ccorrect">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.quiz_select_D_correct">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.switch_the_question">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.three_beeps">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.timer_back">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.trailer_long">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.who_wants_to_be_a_millionaire_logo">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.who_was_correct">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_125k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_16k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_1mil">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_1to3">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_250k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_2k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_4k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_4to8">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_500k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_64k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:Bible_Millionaire_Desktop_WPF.Properties.Resources.win_8k">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+    </members>
+</doc>

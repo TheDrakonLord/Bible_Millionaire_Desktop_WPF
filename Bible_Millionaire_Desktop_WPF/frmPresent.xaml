@@ -1,0 +1,28 @@
+﻿<Window x:Class="Bible_Millionaire_Desktop_WPF.frmPresent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bible_Millionaire_Desktop_WPF"
+        mc:Ignorable="d"
+        Title="frmPresent" Height="450" Width="800" ResizeMode="NoResize" Topmost="True" WindowState="Maximized" WindowStyle="None" KeyDown="Window_KeyDown">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/present.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="176*"/>
+            <ColumnDefinition Width="312*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="361*"/>
+            <RowDefinition Height="59*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnOpen" Content="Open" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Center" Height="31" Width="92" Background="#FFFD0B0B" Foreground="#FF0BF500" IsDefault="True" Click="btnOpen_Click" Grid.Row="2" Grid.Column="2"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Center" Height="20" Width="23" Margin="8,0,0,0" Click="btnExit_Click"/>
+
+    </Grid>
+</Window>

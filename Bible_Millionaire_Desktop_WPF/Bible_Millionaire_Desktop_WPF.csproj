@@ -1,0 +1,638 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Authors>Neal Jamieson</Authors>
+    <Company>Jamieson Applications</Company>
+    <Product>Who Wants to be a Millionaire: Bible Edition</Product>
+    <Copyright>(C) Neal Jamieson 2020</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\nealc\OneDrive\Application Development\Bible_Millionaire_Desktop_WPF\Bible_Millionaire_Desktop_WPF\Bible_Millionaire_Desktop_WPF.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Audio\ask_the_audience.wav" />
+    <None Remove="Audio\closing_theme.wav" />
+    <None Remove="Audio\commercial_in.wav" />
+    <None Remove="Audio\commercial_out.wav" />
+    <None Remove="Audio\correct_order.wav" />
+    <None Remove="Audio\correct_order_2.wav" />
+    <None Remove="Audio\explain_the_rules.wav" />
+    <None Remove="Audio\fastest_finger_interlude.wav" />
+    <None Remove="Audio\fastest_finger_question.wav" />
+    <None Remove="Audio\final_answer_1mil.wav" />
+    <None Remove="Audio\final_answer_32k.wav" />
+    <None Remove="Audio\final_answer_4to8.wav" />
+    <None Remove="Audio\final_answer_5to9.wav" />
+    <None Remove="Audio\final_answer_6to10.wav" />
+    <None Remove="Audio\final_answer_7to11.wav" />
+    <None Remove="Audio\four_in_correct_order.wav" />
+    <None Remove="Audio\goodbye.wav" />
+    <None Remove="Audio\goodbye_extended.wav" />
+    <None Remove="Audio\intro1.wav" />
+    <None Remove="Audio\intro1_sting.wav" />
+    <None Remove="Audio\intro2.wav" />
+    <None Remove="Audio\in_the_hot_seat.wav" />
+    <None Remove="Audio\lets_play_1mil.wav" />
+    <None Remove="Audio\lets_play_1_5_9.wav" />
+    <None Remove="Audio\lets_play_32k.wav" />
+    <None Remove="Audio\lets_play_5to8.wav" />
+    <None Remove="Audio\lets_play_6to10.wav" />
+    <None Remove="Audio\lets_play_7to11.wav" />
+    <None Remove="Audio\lifeline5050.wav" />
+    <None Remove="Audio\lifelines.wav" />
+    <None Remove="Audio\lose_1mil.wav" />
+    <None Remove="Audio\lose_1to4.wav" />
+    <None Remove="Audio\lose_32k.wav" />
+    <None Remove="Audio\lose_5to8.wav" />
+    <None Remove="Audio\lose_5to9.wav" />
+    <None Remove="Audio\lose_6to10.wav" />
+    <None Remove="Audio\lose_7to11.wav" />
+    <None Remove="Audio\main_theme.wav" />
+    <None Remove="Audio\main_theme_radio_edit.wav" />
+    <None Remove="Audio\out_of_time.wav" />
+    <None Remove="Audio\phone_a_friend.wav" />
+    <None Remove="Audio\questions_1to4.wav" />
+    <None Remove="Audio\question_125k.wav" />
+    <None Remove="Audio\question_16k.wav" />
+    <None Remove="Audio\question_1mil.wav" />
+    <None Remove="Audio\question_250k.wav" />
+    <None Remove="Audio\question_2k.wav" />
+    <None Remove="Audio\question_32k.wav" />
+    <None Remove="Audio\question_4k.wav" />
+    <None Remove="Audio\question_500k.wav" />
+    <None Remove="Audio\question_64k.wav" />
+    <None Remove="Audio\question_8k.wav" />
+    <None Remove="Audio\switch_the_question.wav" />
+    <None Remove="Audio\three_beeps.wav" />
+    <None Remove="Audio\trailer_long.wav" />
+    <None Remove="Audio\who_was_correct.wav" />
+    <None Remove="Audio\win_125k.wav" />
+    <None Remove="Audio\win_16k.wav" />
+    <None Remove="Audio\win_1mil.wav" />
+    <None Remove="Audio\win_1to3.wav" />
+    <None Remove="Audio\win_250k.wav" />
+    <None Remove="Audio\win_2k.wav" />
+    <None Remove="Audio\win_4k.wav" />
+    <None Remove="Audio\win_4to8.wav" />
+    <None Remove="Audio\win_500k.wav" />
+    <None Remove="Audio\win_64k.wav" />
+    <None Remove="Audio\win_8k.wav" />
+    <None Remove="Data\quiz_data.xml" />
+    <None Remove="Images\app_icon_your_company.png" />
+    <None Remove="Images\bible_millionaire_logo.png" />
+    <None Remove="Images\btn_a.png" />
+    <None Remove="Images\btn_a_correct.png" />
+    <None Remove="Images\btn_a_selected.png" />
+    <None Remove="Images\btn_b.png" />
+    <None Remove="Images\btn_back.png" />
+    <None Remove="Images\btn_b_correct.png" />
+    <None Remove="Images\btn_b_selected.png" />
+    <None Remove="Images\btn_c.png" />
+    <None Remove="Images\btn_controls.png" />
+    <None Remove="Images\btn_c_correct.png" />
+    <None Remove="Images\btn_c_selected.png" />
+    <None Remove="Images\btn_d.png" />
+    <None Remove="Images\btn_d_correct.png" />
+    <None Remove="Images\btn_d_selected.png" />
+    <None Remove="Images\btn_option.png" />
+    <None Remove="Images\btn_play.png" />
+    <None Remove="Images\btn_settings.png" />
+    <None Remove="Images\default_background.xml" />
+    <None Remove="Images\end_screen.png" />
+    <None Remove="Images\img_background.png" />
+    <None Remove="Images\img_controls.png" />
+    <None Remove="Images\img_description.png" />
+    <None Remove="Images\img_question.png" />
+    <None Remove="Images\ladder_0.png" />
+    <None Remove="Images\ladder_1.png" />
+    <None Remove="Images\ladder_10.png" />
+    <None Remove="Images\ladder_11.png" />
+    <None Remove="Images\ladder_12.png" />
+    <None Remove="Images\ladder_2.png" />
+    <None Remove="Images\ladder_3.png" />
+    <None Remove="Images\ladder_4.png" />
+    <None Remove="Images\ladder_5.png" />
+    <None Remove="Images\ladder_6.png" />
+    <None Remove="Images\ladder_7.png" />
+    <None Remove="Images\ladder_8.png" />
+    <None Remove="Images\ladder_9.png" />
+    <None Remove="Images\lifeline_5050.png" />
+    <None Remove="Images\lifeline_5050_used.png" />
+    <None Remove="Images\lifeline_askaaudience.png" />
+    <None Remove="Images\lifeline_ask_audience_used.png" />
+    <None Remove="Images\lifeline_audience_screen.png" />
+    <None Remove="Images\lifeline_blank.png" />
+    <None Remove="Images\lifeline_blank_used.png" />
+    <None Remove="Images\lifeline_book_screen.png" />
+    <None Remove="Images\lifeline_have_a_hint.png" />
+    <None Remove="Images\lifeline_have_a_hint_used.png" />
+    <None Remove="Images\lifeline_hint_screen.png" />
+    <None Remove="Images\lifeline_look_in_the_book.png" />
+    <None Remove="Images\lifeline_look_in_the_book_used.png" />
+    <None Remove="Images\lifeline_phone.png" />
+    <None Remove="Images\lifeline_phone_screen.png" />
+    <None Remove="Images\lifeline_phone_used.png" />
+    <None Remove="Images\lifeline_walk_away.png" />
+    <None Remove="Images\present.png" />
+    <None Remove="Images\quiz_base.png" />
+    <None Remove="Images\quiz_select_A_base.png" />
+    <None Remove="Images\quiz_select_A_Bcorrect.png" />
+    <None Remove="Images\quiz_select_A_Ccorrect.png" />
+    <None Remove="Images\quiz_select_A_correct.png" />
+    <None Remove="Images\quiz_select_A_Dcorrect.png" />
+    <None Remove="Images\quiz_select_B_Acorrect.png" />
+    <None Remove="Images\quiz_select_B_base.png" />
+    <None Remove="Images\quiz_select_B_Ccorrect.png" />
+    <None Remove="Images\quiz_select_B_correct.png" />
+    <None Remove="Images\quiz_select_B_Dcorrect.png" />
+    <None Remove="Images\quiz_select_C_Acorrect.png" />
+    <None Remove="Images\quiz_select_C_base.png" />
+    <None Remove="Images\quiz_select_C_Bcorrect.png" />
+    <None Remove="Images\quiz_select_C_correct.png" />
+    <None Remove="Images\quiz_select_C_Dcorrect.png" />
+    <None Remove="Images\quiz_select_D_Acorrect.png" />
+    <None Remove="Images\quiz_select_D_base.png" />
+    <None Remove="Images\quiz_select_D_Bcorrect.png" />
+    <None Remove="Images\quiz_select_D_Ccorrect.png" />
+    <None Remove="Images\quiz_select_D_correct.png" />
+    <None Remove="Images\timer_back.png" />
+    <None Remove="Images\who_wants_to_be_a_millionaire_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Audio\ask_the_audience.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\closing_theme.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\commercial_in.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\commercial_out.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\correct_order.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\correct_order_2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\explain_the_rules.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\fastest_finger_interlude.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\fastest_finger_question.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\final_answer_1mil.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\final_answer_32k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\final_answer_4to8.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\final_answer_5to9.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\final_answer_6to10.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\final_answer_7to11.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\four_in_correct_order.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\goodbye.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\goodbye_extended.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\intro1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\intro1_sting.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\intro2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\in_the_hot_seat.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lets_play_1mil.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lets_play_1_5_9.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lets_play_32k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lets_play_5to8.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lets_play_6to10.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lets_play_7to11.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lifeline5050.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lifelines.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lose_1mil.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lose_1to4.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lose_32k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lose_5to8.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lose_5to9.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lose_6to10.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\lose_7to11.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\main_theme.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\main_theme_radio_edit.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\out_of_time.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\phone_a_friend.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\questions_1to4.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_125k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_16k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_1mil.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_250k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_2k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_32k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_4k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_500k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_64k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\question_8k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\switch_the_question.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\three_beeps.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\trailer_long.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\who_was_correct.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_125k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_16k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_1mil.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_1to3.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_250k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_2k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_4k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_4to8.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_500k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_64k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Audio\win_8k.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\quiz_data.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\app_icon_your_company.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bible_millionaire_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_a_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_a_selected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_b.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_b_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_b_selected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_controls.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_c_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_c_selected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_d_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_d_selected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_option.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_play.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\btn_settings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\default_background.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\end_screen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\img_background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\img_controls.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\img_description.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\img_question.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ladder_9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_5050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_5050_used.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_askaaudience.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_ask_audience_used.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_audience_screen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_blank.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_blank_used.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_book_screen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_have_a_hint.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_have_a_hint_used.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_hint_screen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_look_in_the_book.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_look_in_the_book_used.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_phone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_phone_screen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_phone_used.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lifeline_walk_away.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\present.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_base.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_A_base.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_A_Bcorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_A_Ccorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_A_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_A_Dcorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_B_Acorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_B_base.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_B_Ccorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_B_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_B_Dcorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_C_Acorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_C_base.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_C_Bcorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_C_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_C_Dcorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_D_Acorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_D_base.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_D_Bcorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_D_Ccorrect.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\quiz_select_D_correct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\timer_back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\who_wants_to_be_a_millionaire_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

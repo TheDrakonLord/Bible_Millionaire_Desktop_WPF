@@ -1,0 +1,50 @@
+﻿<Window x:Class="Bible_Millionaire_Desktop_WPF.frmSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bible_Millionaire_Desktop_WPF"
+        mc:Ignorable="d"
+        Title="frmSettings" Height="450" Width="800" ResizeMode="NoResize" Topmost="True" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/img_background.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="194*"/>
+            <RowDefinition Height="31*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="20" Width="40" Click="btnBack_Click"/>
+        <GroupBox x:Name="gbxLifelineA" Header="Lifeline A" HorizontalAlignment="Right" Height="52" Margin="0,10,0,0" VerticalAlignment="Top" Width="380" Grid.Column="2" Foreground="#FFF7F7F7">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="radBook" Content="Look in the Book" Foreground="#FFF7F7F7" Width="119" Checked="radBook_Checked"/>
+                <RadioButton x:Name="radAudience" Content="Ask the Audience" Foreground="#FFF7F7F7" Width="114" Checked="radAudience_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="gbxLifelineB" Header="Lifeline B" HorizontalAlignment="Right" Height="52" Margin="0,67,0,0" VerticalAlignment="Top" Width="380" Grid.Column="2" Foreground="#FFF7F7F7">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="radHint" Content="Have a hint" Foreground="#FFF7F7F7" Width="120" Checked="radHint_Checked"/>
+                <RadioButton x:Name="radPhone" Content="Phone a Friend" Foreground="#FFF7F7F7" Checked="radPhone_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="gbxTimer" Header="Timer" HorizontalAlignment="Right" Height="52" Margin="0,124,0,0" VerticalAlignment="Top" Width="380" Grid.Column="2" Foreground="#FFF7F7F7">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="radTimerOn" Content="Timer On" Foreground="#FFF7F7F7" Width="121" Checked="radTimerOn_Checked"/>
+                <RadioButton x:Name="radTimerOff" Content="Timer Off" Foreground="#FFF7F7F7" Checked="radTimerOff_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="gbxTutorial" Header="Tutorial" HorizontalAlignment="Right" Height="52" Margin="0,181,0,0" VerticalAlignment="Top" Width="380" Grid.Column="2" Foreground="#FFF7F7F7">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="radTutorialOn" Content="Tutorial On" Foreground="#FFF7F7F7" Width="120" Checked="radTutorialOn_Checked"/>
+                <RadioButton x:Name="radTutorialOff" Content="Tutorial Off" Foreground="#FFF7F7F7" Checked="radTutorialOff_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnSave" Content="Save" Grid.Column="2" HorizontalAlignment="Right" Margin="261,20,0,0" VerticalAlignment="Center" Width="133" Height="32" Grid.Row="1" Click="btnSave_Click"/>
+
+    </Grid>
+</Window>
